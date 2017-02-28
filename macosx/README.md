@@ -1,4 +1,4 @@
-move them under
+move exec files under
 
 ```
 /usr/local/bin/
