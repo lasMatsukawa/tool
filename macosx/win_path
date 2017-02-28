@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+mac_path = ARGV[0]
+if mac_path.nil? or not mac_path.match(/smb:\/\/.+/) 
+  raise ArgumentError.new("Usage:\twin_path smb://192.168.x.x/foo/bar")
+end
+puts mac_path.gsub('smb:', '').gsub('/', '¥')
