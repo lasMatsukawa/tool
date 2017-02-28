@@ -1,3 +1,5 @@
+# installation
+
 move exec files under
 
 ```
@@ -9,3 +11,16 @@ result will be
 ```
 /usr/local/bin/win_path
 ```
+
+## exec file overview
+
+### winpath
+
+```
+winpath smb://192.168.x.x/foo/bar/baz/qux
+
+¥¥192.168.x.x¥foo¥bar¥baz¥qux
+```
+
+* replace ```/``` to ```¥```
+* argument format should be ```/smb:\/\/.+/```
